@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<script>
+          /*trening 10 steeps*/
+    /*генерируем случайные числа*/
+    var x, y, res, answer;
+        
+    //x = Math.random();/* выкидывает число в диапозоне 0,1 */
+    //x = Math.random() +3;/* выкидывает число в диапозоне 3 4 */
+    //x = Math.random() * 12 +3;/*растягиваем диапазон 3 - 13*/
+    //Math.floor - округление числа в низ (отбрасывает дробную часть)
+    // + 1 для вывода 15
+    //x = Math.floor(Math.random() * 13 +3) + 1;
+    x = Math.floor(Math.random() * 13 ) + 3;/* 3 - 15 */
+    y = Math.floor(Math.random() * 13 ) + 3;
+    
+    res = x * y;
+    
+    /*print*/
+    answer = +prompt(x + ' * ' + y + " = ");//просим ввести ответ
+    
+    /* делаем проверку на правельный ответ */
+    if(res == answer){
+        console.log('Молодец');
+    }
+    else{
+        console.log('Балбес ' + x  + ' * ' + y + " = " + res);
+        
+    }
+    
+    console.log(x);/*выводим  в консоли гугла*/
+    
+</script>
